@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Boleto al planeta potaxie 🥑👄🥑</title>
+    <meta name="keywords" content="viajes potaxianos, planeta potaxie, cultura potaxiana, aguacates, productos potaxianos, testimonios potaxies, boleto potaxiano">
+<meta name="description" content="Descubre los encantos del planeta potaxie, un lugar único lleno de paisajes exuberantes, aguacates y una cultura fascinante. Obtén tu boleto para una experiencia potaxiana inolvidable.">
+<meta name="author" content="lepotaxie7">
+<meta name="robots" content="index">
+    <script src="https://html2canvas.hertzen.com/dist/html2canvas.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,300&display=swap" rel="stylesheet">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    
+    <style>
+        *{
+    font-family: 'DM Sans', sans-serif;
+    scroll-behavior: smooth;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    
+}
+
+
+.bienvenida{
+    width: 100vw;
+    height: 100vh;
+    background-image: url("fotos/fondo.png");
+    background-size: cover;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-attachment: fixed;
+    
+}
+
+.bienvenida p{
+    max-width: 80%;
+}
+
+p{
+    max-width: 80%;
+}
+
+.bienvenida a{
+    padding: 0.75em;
+    border-radius: 0.7em;
+    text-decoration: none;
+    color: #fff;
+    border: 1.5px solid #fff;
+}
+
+h2{
+    text-align: center;
+    margin: 1.5em;
+    margin-bottom: 0.5em;
+}
+
+.introduccion{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.introduccion p{
+    margin: 0.5em;
+    
+}
+
+.testimoniospotaxies{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 70%;    
+    margin: 0 auto;    
+    margin-top: 1em;
+    
+    
+}
+
+.testimonio{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.testimonio img{
+    width: 8em;
+    height: 8em;
+    border-radius: 50%;
+    
+}
+
+.obtenerboleto{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 2em;
+    margin-bottom: 2em;
+    
+}
+
+
+.formularie{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    
+}
+
+input{
+    margin-top: 0.5em;
+    margin-bottom: 1em;
+    width: 50%;
+    padding: 0.5em;
+    border: none;
+    border-bottom: 1.5px solid #000;
+    outline: none;
+    transition: all 0.1s;
+}
+
+input:hover{
+    border-bottom: 1.5px solid #20bd22;
+}
+
+button{
+    width: 10em;
+    padding: 1em;
+    border-radius: 0.7em;
+    border: none;
+    margin: auto;
+    margin-bottom: 1em;
+    
+}
+
+
+button:hover{
+    background: linear-gradient(to bottom right, #E50000, #FF8D00, #FFEE00, #028121, #004CFF, #770088);
+    color: #fff;
+    
+}
+
+#perre{
+    color: #ff000a;
+}
+
+.boleto{
+    width: 60%;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    background-color: #fbfbfb;
+    display: flex;
+    border-radius: 0.4em;
+    box-shadow: 5px 5px 20px;
+    
+}
+
+.boleto img{
+    width: 60%;
+    border-radius: 0.4em 0em 0em 0.4em;
+}
+
+.boletoinfo{
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.boletoinfo p{
+    margin: 0.7em;
+    font-size: 1.2em;
+    flex-grow: 1;
+    
+}
+
+.esconder{
+    display: none;
+}
+
+footer{
+    background-color: #e7e7e7;
+    padding: 1em;
+}
+
+footer a{
+    color: #000;
+    
+}
+
+
+@media screen and (max-width: 880px){
+    
+    .testimoniospotaxies{
+       width: 90%;
+    }
+    
+    
+    .testimonio p{
+       font-size: 0.8em;
+    }
+    
+    .boletoinfo p{
+        font-size: 1em;
+    }
+}
+
+
+@media screen and (max-width: 700px){
+    p{
+    max-width: 90%;
+    }
+    
+    .testimoniospotaxies{
+    flex-direction: column;
+    width: 100%;
+    }
+    
+    .testimonio{
+        margin: 1em;
+    }
+    
+    .testimonio p{
+       font-size: 1em;
+    }
+    
+    .testimonio img{
+    width: 12em;
+    height: 12em;
+    }
+    
+    .formularie{
+    width: 90%;
+    }
+    
+    input{
+        width: 95%;
+    }
+    
+    .boleto{
+        width: 90%;
+    }
+    
+    .boletoinfo p{
+        font-size: 1.2em;
+    }
+    
+    
+}
+
+@media screen and (max-width: 500px){
+    
+    .boletoinfo p{
+        font-size: 0.7em;
+    }
+    
+    .testimonio p{
+        width: 80%;
+    }
+    
+    
+}
+
+@media screen and (max-width: 350px){
+    
+    .boletoinfo p{
+        font-size: 0.6em;
+    }
+}
+
+    </style>
+    
+    <script>
+
+function advertencia() {
+    document.getElementById("perre").innerText = "Completa los campos que faltan"
+    
+}
+
+function generar() {
+    document.getElementById("perre").innerText = "";
+        
+    document.getElementById("nametext").innerText = nombre.value;
+    document.getElementById("destinotext").innerText = destino.value;
+        
+    const fecha = `${new Date().getDay()}/${new Date().getMonth()+1}/${new Date().getFullYear()}`
+        
+    document.getElementById("fechatext").innerText = fecha+" - "+Math.floor(Math.random()*23)+":00";
+    
+    document.getElementById("preciotext").innerText = "$"+Math.floor(Math.random()*150)
+    
+    
+    document.getElementById("zonaboleto").className = "boleto"
+        
+    html2canvas(document.querySelector(".boleto")).then(canvas => {
+    // Crea un enlace (link) para descargar la imagen
+    var link = document.createElement('a');
+    
+    // Convierte el canvas a una URL de datos (data URL)
+    var image = canvas.toDataURL();
+    
+    // Establece la URL del enlace como la URL de datos generada por el canvas
+    link.href = image;
+    
+    // Establece el nombre del archivo que se descargará
+    link.download = 'boleto.png';
+    
+    // Añade el enlace al documento
+    document.body.appendChild(link);
+    
+    // Simula un clic en el enlace para iniciar la descarga
+    link.click();
+    
+    document.body.removeChild(link)
+    
+});
+}
+
+function lesbi(){
+
+html2canvas(document.querySelector(".boleto")).then(canvas => {
+    // Crea un enlace (link) para descargar la imagen
+    var link = document.createElement('a');
+    
+    // Convierte el canvas a una URL de datos (data URL)
+    var image = canvas.toDataURL();
+    
+    // Establece la URL del enlace como la URL de datos generada por el canvas
+    link.href = image;
+    
+    // Establece el nombre del archivo que se descargará
+    link.download = 'boleto.png';
+    
+    // Añade el enlace al documento
+    document.body.appendChild(link);
+    
+    // Simula un clic en el enlace para iniciar la descarga
+    link.click();
+    
+});
+
+}
+
+function sorprendeme() {
+    const ciudades = ["Anekakaenekulo", "Jiafei City", "Potaxie City", "Ducado de Nezaburgo", "Poosay City", "Floptropica", "Puerto de Mapuchaina", "Pitexburg", "Gogolandia", "HornycakKe"];
+    
+    document.getElementById("destino").value = ciudades[Math.floor(Math.random()*ciudades.length)]
+}
+
+function reclamarboleto(){
+    const nombre = document.getElementById("nombre")
+    const destino = document.getElementById("destino")
+
+    if(nombre.value.trim() == "" || destino.value.trim() == ""){
+        advertencia()
+        
+    }else{
+        generar()
+    }
+    
+}
+
+    </script>
+    <section class="bienvenida">
+        <h1>Viajes potaxianos</h1>
+        <p>Descubre un lugar único y auténtico, donde aquellos que soportan pueden sumergirse en la riqueza de la cultura potaxiana</p>
+        <a href="#llegada">Explorar 🥑👄🥑</a>
+    </section>
+    <section class="introduccion">
+        <h2 id="llegada">¿Por qué viajar al planeta potaxie?</h2>
+        <p>El planeta potaxie es un exoplaneta situado en una galaxia distante, y es un lugar fascinante para los visitantes. Gobernado por Jiafei, la Diosa Suprema, el planeta se destaca por sus hermosos paisajes y una cultura única.</p>
+        <p>Al exploralo, te encontrarás con exuberantes campos de aguacates, que son la base de la vida en este mundo. La conexión con la naturaleza y la abundancia de aguacates enriquecen la experiencia, proporcionando una perspectiva única sobre la vida cotidiana.</p>
+        <p>Podrás sumergirte en la cultura local al explorar mercados llenos de productos innovadores creados por Jiafei. Estos productos no solo son esenciales para la vida diaria, sino que también tienen propiedades únicas relacionadas con el potaxio, ademas, todos estos productos estan verificados por Nicki Minaj.</p>
+    </section>
+    <section class="testimoniospotaxies">
+        <div class="testimonio">
+            <img src="fotos/potaxie1.png" alt="Haeun Puchaina">
+            <h3>Haeun Puchaina</h3>
+            <p><i>"Mi ane latía al ritmo del himno potaxiano al llegar a este hermoso planeta"</i></p>
+        </div>
+        
+        <div class="testimonio">
+            <img src="fotos/potaxie2.png" alt="Soojin Devorosa">
+            <h3>Soojin Devorosa</h3>
+            <p><i>"Navegué por los mares de Mapuchaina y presencié el atardecer más divine"</i></p>
+        </div>
+        
+        <div class="testimonio">
+            <img src="fotos/potaxie3.png" alt="Kyunghee Aguacatx">
+            <h3>Kyunghee Aguacatx</h3>
+            <p><i>"Aterricé en Poosay City, mi nave tardó solo 23, casi 24 segundos en llegar"</i></p>
+        </div>
+    </section>
+    <section class="obtenerboleto">
+        <h2 onclick="lesbi()">Obtener boleto</h2>
+        <p>Reclamar tu boleto para viajar al planeta potaxie es tan fácil como devorar un pite, simplemente completa estos dos datos y la página web creará tu boleto potaxiano al instante.</p>
+        <div class="formularie">
+            <label>Nombre:</label>
+            <input type="text" id="nombre" maxlength="20">
+            <label>Destino a viajar: <span onclick="sorprendeme()">🎲</span></label>
+            <input type="text" id="destino" maxlength="20">
+            
+            <p id="perre"></p>
+            
+            <button id="reclamar" onclick="reclamarboleto();">Reclamar boleto</button>
+        </div>
+        
+        <div class="esconder" id="zonaboleto">
+            <img src="jiafei.jpg" alt="Fondo del boleto" id="imgboleto">
+            <div class="boletoinfo">
+                <p><b>Boleto al planeta potaxie 🥑👄🥑</b></p>
+                <p><b>Nombre:</b> <span id="nametext"></span></p>
+                <p><b>Destino:</b> <span id="destinotext"></span></p>
+                <p><b>Fecha de viaje:</b> <span id="fechatext"></span></p>
+                <p><b>Precio:</b> <span id="preciotext"></span></p>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <p>Creador: <a href="https://tiktok.com/@lepotaxie7" target="_BLANK">@lepotaxie7</a></p>
+    </footer>    
+</body>
+</html>
