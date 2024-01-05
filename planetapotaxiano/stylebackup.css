@@ -1,0 +1,160 @@
+*{
+    font-family: 'DM Sans', sans-serif;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+}
+
+
+.bienvenida{
+    width: 100vw;
+    height: 100vh;
+    background-image: url("fotos/fondo.png");
+    background-size: cover;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-attachment: fixed;
+    
+}
+
+.bienvenida p{
+    max-width: 80%;
+}
+
+p{
+    max-width: 90%;
+}
+
+.bienvenida a{
+    padding: 0.75em;
+    border-radius: 0.7em;
+    text-decoration: none;
+    color: #fff;
+    border: 1.5px solid #fff;
+}
+
+h2{
+    text-align: center;
+    margin: 1.5em;
+    margin-bottom: 0.5em;
+}
+
+.introduccion{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.introduccion p{
+    margin: 0.5em;
+    
+}
+
+.testimoniospotaxies{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 1em;
+}
+
+.testimonio{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 1.5em;
+    
+}
+
+
+.testimonio img{
+    width: 12em;
+    height: 12em;
+    border-radius: 50%;
+    
+}
+
+.obtenerboleto{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+.formularie{
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    
+}
+
+input{
+    margin-top: 0.5em;
+    margin-bottom: 1em;
+    width: 95%;
+    padding: 0.5em;
+    border: none;
+    border-bottom: 1.5px solid #000;
+    outline: none;
+    transition: all 0.1s;
+}
+
+input:hover{
+    border-bottom: 1.5px solid #20bd22;
+}
+
+button{
+    width: 10em;
+    padding: 1em;
+    border-radius: 0.7em;
+    border: none;
+    margin: auto;
+    margin-bottom: 1em;
+    transition: all 0.1s;
+}
+
+button:hover{
+    border: 1px solid #000;
+}
+
+#perre{
+    color: #ff000a;
+}
+
+.boleto{
+    width: 90%;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    background-color: #fbfbfb;
+    display: flex;
+    border-radius: 0.4em;
+    box-shadow: 5px 5px 20px;
+}
+
+.boleto img{
+    width: 60%;
+    border-radius: 0.4em 0em 0em 0.4em;
+}
+
+.boletoinfo{
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.boletoinfo p{
+    margin: 0.7em;
+    font-size: 0.7em;
+    flex-grow: 1;
+    
+}
+
+.esconder{
+    display: none;
+}

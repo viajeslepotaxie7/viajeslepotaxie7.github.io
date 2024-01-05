@@ -1,0 +1,268 @@
+*{
+    font-family: 'DM Sans', sans-serif;
+    scroll-behavior: smooth;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    
+}
+
+
+.bienvenida{
+    width: 100vw;
+    height: 100vh;
+    background-image: url("fotos/fondo.png");
+    background-size: cover;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-attachment: fixed;
+    
+}
+
+.bienvenida p{
+    max-width: 80%;
+}
+
+p{
+    max-width: 80%;
+}
+
+.bienvenida a{
+    padding: 0.75em;
+    border-radius: 0.7em;
+    text-decoration: none;
+    color: #fff;
+    border: 1.5px solid #fff;
+}
+
+h2{
+    text-align: center;
+    margin: 1.5em;
+    margin-bottom: 0.5em;
+}
+
+.introduccion{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.introduccion p{
+    margin: 0.5em;
+    
+}
+
+.testimoniospotaxies{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 70%;    
+    margin: 0 auto;    
+    margin-top: 1em;
+    
+    
+}
+
+.testimonio{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.testimonio img{
+    width: 8em;
+    height: 8em;
+    border-radius: 50%;
+    
+}
+
+.obtenerboleto{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 2em;
+    margin-bottom: 2em;
+    
+}
+
+
+.formularie{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    
+}
+
+input{
+    margin-top: 0.5em;
+    margin-bottom: 1em;
+    width: 50%;
+    padding: 0.5em;
+    border: none;
+    border-bottom: 1.5px solid #000;
+    outline: none;
+    transition: all 0.1s;
+}
+
+input:hover{
+    border-bottom: 1.5px solid #20bd22;
+}
+
+button{
+    width: 10em;
+    padding: 1em;
+    border-radius: 0.7em;
+    border: none;
+    margin: auto;
+    margin-bottom: 1em;
+    
+}
+
+
+button:hover{
+    background: linear-gradient(to bottom right, #E50000, #FF8D00, #FFEE00, #028121, #004CFF, #770088);
+    color: #fff;
+    
+}
+
+#perre{
+    color: #ff000a;
+}
+
+.boleto{
+    width: 60%;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    background-color: #fbfbfb;
+    display: flex;
+    border-radius: 0.4em;
+    box-shadow: 5px 5px 20px;
+    
+    
+}
+
+.boleto img{
+    width: 60%;
+    border-radius: 0.4em 0em 0em 0.4em;
+}
+
+.boletoinfo{
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.boletoinfo p{
+    margin: 0.7em;
+    font-size: 1.2em;
+    flex-grow: 1;
+    
+}
+
+.esconder{
+    display: none;
+}
+
+#descargar{
+    margin-top: 2em;
+    width: auto;
+}
+
+footer{
+    background-color: #e7e7e7;
+    padding: 1em;
+}
+
+footer a{
+    color: #000;
+    
+}
+
+
+@media screen and (max-width: 880px){
+    
+    .testimoniospotaxies{
+       width: 90%;
+    }
+    
+    
+    .testimonio p{
+       font-size: 0.8em;
+    }
+    
+    .boletoinfo p{
+        font-size: 1em;
+    }
+}
+
+
+@media screen and (max-width: 700px){
+    p{
+    max-width: 90%;
+    }
+    
+    .testimoniospotaxies{
+    flex-direction: column;
+    width: 100%;
+    }
+    
+    .testimonio{
+        margin: 1em;
+    }
+    
+    .testimonio p{
+       font-size: 1em;
+    }
+    
+    .testimonio img{
+    width: 12em;
+    height: 12em;
+    }
+    
+    .formularie{
+    width: 90%;
+    }
+    
+    input{
+        width: 95%;
+    }
+    
+    .boleto{
+        width: 90%;
+    }
+    
+    .boletoinfo p{
+        font-size: 1.2em;
+    }
+    
+    
+}
+
+@media screen and (max-width: 500px){
+    
+    .boletoinfo p{
+        font-size: 0.7em;
+    }
+    
+    .testimonio p{
+        width: 80%;
+    }
+    
+    
+}
+
+@media screen and (max-width: 350px){
+    
+    .boletoinfo p{
+        font-size: 0.6em;
+    }
+}
