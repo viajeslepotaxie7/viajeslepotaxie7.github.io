@@ -34,7 +34,7 @@ function generar() {
     document.getElementById("nametext").innerText = nombre.value;
     document.getElementById("destinotext").innerText = destino.value;
         
-    const fecha = `${new Date().getDay()}/${new Date().getMonth()+1}/${new Date().getFullYear()}`
+    const fecha = `${new Date().getDate()}/${new Date().getMonth()+1}/${new Date().getFullYear()}`
         
     document.getElementById("fechatext").innerText = fecha
     
@@ -55,7 +55,7 @@ html2canvas(document.querySelector(".boleto")).then(canvas => {
     var image = canvas.toDataURL();
     
     link.href = image;
-    link.download = `boleto_${new Date().getFullYear()}-${new Date().getMonth()+1}-${new Date().getDay()}_${new Date().getHours()}-${new Date().getMinutes()}-${new Date().getSeconds()}-${new Date().getMilliseconds()}.png`;
+    link.download = `boleto_${new Date().getFullYear()}-${new Date().getMonth()+1}-${new Date().getDate()}_${new Date().getHours()}-${new Date().getMinutes()}-${new Date().getSeconds()}-${new Date().getMilliseconds()}.png`;
     
     document.body.appendChild(link);
     link.click();
